@@ -1,5 +1,5 @@
 {
-    "name": "@pondigitalsolutions/rc-storefront-composables",
+    "name": "@kali604/rc-storefront-composables",
     "version": "1.0.0",
     "sideEffects": false,
     "main": "lib/index.cjs.js",
@@ -30,7 +30,7 @@
     "dependencies": {
         "@kali604/rc-storefront-api": "^1.0.1",
         "@vue-storefront/interfaces": "^0.0.3",
-        "@vue/composition-api": "^0.6.7",
+        "@vue/composition-api": "1.0.0-beta.21",
         "js-cookie": "^2.2.1"
     },
     "devDependencies": {
