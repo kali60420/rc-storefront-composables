@@ -4,13 +4,13 @@ import {
     Order,
     ShippingDetails,
     PaymentMethods
-} from "@pondigitalsolutions/rc-storefront-api/lib/types";
+} from "@kali604/reactioncommerce-api/lib/types";
 import { useCheckoutFactory } from "./../factories";
 import { CheckoutMutationResult, SearchResult } from "./../interfaces";
 import {
     availablePaymentMethods as apiAvailablePaymentMethods,
     placeOrder as apiPlaceOrder
-} from "@pondigitalsolutions/rc-storefront-api";
+} from "@kali604/reactioncommerce-api";
 
 type Disabled = {
     personalDetails: boolean;
