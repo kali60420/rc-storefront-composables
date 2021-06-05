@@ -1,5 +1,5 @@
 {
-    "name": "@kali604/rc-storefront-composables",
+    "name": "@kali604/reactioncommerce-composables",
     "version": "1.0.2",
     "sideEffects": false,
     "main": "lib/index.cjs.js",
@@ -28,9 +28,9 @@
     },
     "homepage": "https://github.com/pondigitalsolutions/rc-storefront-composables#readme",
     "dependencies": {
-        "@kali604/rc-storefront-api": "^1.0.1",
+        "@kali604/reactioncommerce-api": "latest",
         "@vue-storefront/interfaces": "^0.0.3",
-        "@vue/composition-api": "1.0.0-rc.10",
+        "@vue/composition-api": "latest",
         "js-cookie": "^2.2.1"
     },
     "devDependencies": {
