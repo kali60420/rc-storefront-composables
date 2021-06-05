@@ -1,0 +1,15 @@
+import { CheckoutGetters } from "./../interfaces";
+import { Cart, OrderItem, FulfillmentMethod, FulfillmentGroup } from "@kali604/reactioncommerce-api/lib/types";
+export declare const getId: (cart: Cart) => string;
+export declare const getPersonalDetails: (cart: Cart) => any;
+export declare const getShippingDetails: (cart: Cart) => any;
+export declare const getFulfillmentGroupId: (group: FulfillmentGroup) => string;
+export declare const getShippingMethodId: (method: FulfillmentMethod) => string;
+export declare const getShippingMethodName: (method: FulfillmentMethod) => string;
+export declare const getShippingMethodLabel: (method: FulfillmentMethod) => string;
+export declare const getShippingMethodDisplayPrice: (method: FulfillmentMethod) => string;
+export declare const getShippingMethodPrice: (method: FulfillmentMethod) => number;
+export declare const getShippingMethodHandlingDisplayPrice: (method: FulfillmentMethod) => string;
+export declare const getOrderItems: (cart: Cart) => OrderItem[];
+declare const checkoutGetters: CheckoutGetters<Cart, FulfillmentGroup, FulfillmentMethod, OrderItem>;
+export default checkoutGetters;

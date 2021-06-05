@@ -1,0 +1,20 @@
+import { Ref } from "@vue/composition-api";
+import { UseCart, CartResult, CartMutationResult } from "./../interfaces";
+import { FulfillmentMethod } from "@kali604/reactioncommerce-api/lib/types";
+export declare type UseCartFactoryParams<CART, GetCartParams, GetAccountCartParams, AddToCartParams, UpdateCartItemParams, RemoveFromCartParams, SetShippingAddressParams, UpdateFulfillmentMethodsParams, SelectFulfillmentMethodParams, ApplyCouponParams> = {
+    cart: Ref<CART>;
+    token: Ref<String>;
+    shippingMethods: Ref<FulfillmentMethod[]>;
+    selectedFulfillmentMethod: Ref<String>;
+    loadCart: (params: GetCartParams) => Promise<CartResult<CART>>;
+    loadAccountCart: (params: GetAccountCartParams) => Promise<CartResult<CART>>;
+    addToCart: (params: AddToCartParams) => Promise<CartMutationResult<CART>>;
+    updateCartItem: (params: UpdateCartItemParams) => Promise<CartMutationResult<CART>>;
+    removeFromCart: (params: RemoveFromCartParams) => Promise<CartMutationResult<CART>>;
+    setShippingAddress: (params: SetShippingAddressParams) => Promise<CartMutationResult<CART>>;
+    updateShippingMethods: (params: UpdateFulfillmentMethodsParams) => Promise<CartMutationResult<CART>>;
+    setFulfillmentMethod: (params: SelectFulfillmentMethodParams) => Promise<CartMutationResult<CART>>;
+    addCoupon: (params: ApplyCouponParams) => Promise<CartMutationResult<CART>>;
+    finalizeCart: () => Promise<void>;
+};
+export declare function useCartFactory<CART, CART_PARAMS, ACCOUNT_CART_PARAMS, ADD_TO_CART_PARAMS, UPDATE_CART_ITEM_PARAMS, REMOVE_FROM_CART_PARAMS, SHIPPINGADDRESS_PARAMS, UPDATESHIPPINGMETHODS_PARAMS, SELECTFULFILLMENTMETHOD_PARAMS, APPLY_COUPON_PARAMS>(factoryParams: UseCartFactoryParams<CART, CART_PARAMS, ACCOUNT_CART_PARAMS, ADD_TO_CART_PARAMS, UPDATE_CART_ITEM_PARAMS, REMOVE_FROM_CART_PARAMS, SHIPPINGADDRESS_PARAMS, UPDATESHIPPINGMETHODS_PARAMS, SELECTFULFILLMENTMETHOD_PARAMS, APPLY_COUPON_PARAMS>): (cacheId: string) => UseCart<CART>;

@@ -29,17 +29,20 @@ export const shippingDetails: Ref<ShippingDetails> = ref({
     firstName: null,
     lastName: null,
     address1: null,
-    number: null,
+    streetNumber: null,
+    phone: null,
     postal: null,
     city: null,
-    country: null
+    country: null,
+    company: null
 });
 
 export const billingDetails: Ref<ShippingDetails> = ref({
     firstName: null,
     lastName: null,
     address1: null,
-    number: null,
+    streetNumber: null,
+    phone: null,
     postal: null,
     city: null,
     country: null,

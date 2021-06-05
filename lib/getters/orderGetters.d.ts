@@ -1,0 +1,10 @@
+import { UserOrder } from "@kali604/reactioncommerce-api/lib/types";
+import { OrderGetters } from "../interfaces";
+export declare const getId: (order: any) => string;
+export declare const getReferenceId: (order: any) => string;
+export declare const getDisplayPrice: (order: any) => string;
+export declare const getPrice: (order: any) => string;
+export declare const getStatus: (order: any) => string;
+export declare const getDate: (order: any) => any;
+declare const orderGetters: OrderGetters<UserOrder>;
+export default orderGetters;

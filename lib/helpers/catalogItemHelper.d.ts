@@ -1,0 +1,21 @@
+export default function enhanceProduct(product: any): {
+    productId: any;
+    pageTitle: any;
+    description: any;
+    isVisible: any;
+    sku: any;
+    slug: any;
+    minOrderQuantity: any;
+    originCountry: any;
+    productType: any;
+    isSoldOut: any;
+    isLowQuantity: any;
+    isBackorder: any;
+    vendor: any;
+    width: any;
+    weight: any;
+    height: any;
+    pricing: any;
+    metafields: any;
+    variants: any;
+};
